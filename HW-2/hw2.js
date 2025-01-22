@@ -77,12 +77,52 @@ console.log(x1);
 // У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
 let coursesAndDurationArray = [
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4},
+    {title: 'JavaScript Complex', monthDuration: 5,},
+    {title: 'Java Complex', monthDuration: 6,},
+    {title: 'Python Complex', monthDuration: 6,},
+    {title: 'QA Complex', monthDuration: 4,},
+    {title: 'FullStack', monthDuration: 7,},
+    {title: 'Frontend', monthDuration: 4,},
 ];
 
-console.log(coursesAndDurationArray);
+
+if (coursesAndDurationArray[0].monthDuration > 5){
+console.log("Cool");}
+else {
+    console.log("BAD");
+}
+
+if(coursesAndDurationArray[1].monthDuration > 5){
+    console.log("Cool");
+}
+else {
+    console.log("BAD");
+}
+
+if (coursesAndDurationArray[2].monthDuration > 5){
+    console.log("Cool");
+}
+else {
+    console.log("BAD");
+}
+
+if (coursesAndDurationArray[3].monthDuration > 5){
+    console.log("Cool");
+}
+else {
+    console.log("BAD");
+}
+
+if (coursesAndDurationArray[4].monthDuration > 5){
+    console.log("Cool");
+}
+else {
+    console.log("BAD");
+}
+
+if (coursesAndDurationArray[5].monthDuration > 5){
+    console.log("Cool");
+}
+else {
+    console.log("BAD");
+}
