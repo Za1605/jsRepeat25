@@ -2,13 +2,15 @@
  //   Якщо змінна x не дорівнює нулю, виведіть 'Вірно',
 //   інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
-let x = 54;
 
-if (0 != x) {
-    console.log('Well');
-} else {
-    console.log('BAD');
-}
+
+//let x = 54;
+//
+//if (0 != x) {
+//    console.log('Well');
+//} else {
+//    console.log('BAD');
+//}
 
 //- Користувач вводить або має два числа.
 // Потрібно знайти та вивести максимальне число з тих двох .
@@ -50,20 +52,20 @@ if (!x1){
 }
 console.log(x1);
 
-x=0;
+x1=0;
 if(!x1){
     x1= "default";
 }
 
 console.log(x1);
 
-x= "hello";
+x1= "hello";
 if(!x1){
     x1="default";
 }
 console.log(x1);
 
-x= 100;
+x1= 100;
 if(!x1){
     x1 = "default";
 
@@ -76,53 +78,85 @@ console.log(x1);
 // За допомоги іф перевірити кожен його елемент на тривалість навчання.
 // У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
-let coursesAndDurationArray = [
-    {title: 'JavaScript Complex', monthDuration: 5,},
-    {title: 'Java Complex', monthDuration: 6,},
-    {title: 'Python Complex', monthDuration: 6,},
-    {title: 'QA Complex', monthDuration: 4,},
-    {title: 'FullStack', monthDuration: 7,},
-    {title: 'Frontend', monthDuration: 4,},
-];
+//let coursesAndDurationArray = [
+//    {title: 'JavaScript Complex', monthDuration: 5,},
+//    {title: 'Java Complex', monthDuration: 6,},
+//    {title: 'Python Complex', monthDuration: 6,},
+//    {title: 'QA Complex', monthDuration: 4,},
+//    {title: 'FullStack', monthDuration: 7,},
+//    {title: 'Frontend', monthDuration: 4,},
+//];
+//
+//
+//if (coursesAndDurationArray[0].monthDuration > 5){
+//console.log("Cool");}
+//else {
+//    console.log("BAD");
+//}
+//
+//if(coursesAndDurationArray[1].monthDuration > 5){
+//    console.log("Cool");
+//}
+//else {
+//    console.log("BAD");
+//}
+//
+//if (coursesAndDurationArray[2].monthDuration > 5){
+//    console.log("Cool");
+//}
+//else {
+//    console.log("BAD");
+//}
+//
+//if (coursesAndDurationArray[3].monthDuration > 5){
+//    console.log("Cool");
+//}
+//else {
+//    console.log("BAD");
+//}
+//
+//if (coursesAndDurationArray[4].monthDuration > 5){
+//    console.log("Cool");
+//}
+//else {
+//    console.log("BAD");
+//}
+//
+//if (coursesAndDurationArray[5].monthDuration > 5){
+//    console.log("Cool");
+//}
+//else {
+//    console.log("BAD");
+//}
+//
+////let color = prompt('enter color');
+//
+//switch (color) {
+//    case 'green':
+//    case 'yellow':
+//        console.log('go');
+//
+//        break;
+//    case 'red':
+//        console.log('stop');
+//        break;
+//    default:
+//        console.log('ERROR');
+//}
 
+let obj1 = {id:1,};
+let obj2 = obj1;
+let obj3 = obj2;
+console.log(obj2);
 
-if (coursesAndDurationArray[0].monthDuration > 5){
-console.log("Cool");}
-else {
-    console.log("BAD");
-}
+obj2.name = 'mamamam';
+console.log(obj2);
 
-if(coursesAndDurationArray[1].monthDuration > 5){
-    console.log("Cool");
-}
-else {
-    console.log("BAD");
-}
+obj1.surname = 'Ivanova';
+console.log(obj1);
+console.log(obj2);
 
-if (coursesAndDurationArray[2].monthDuration > 5){
-    console.log("Cool");
-}
-else {
-    console.log("BAD");
-}
-
-if (coursesAndDurationArray[3].monthDuration > 5){
-    console.log("Cool");
-}
-else {
-    console.log("BAD");
-}
-
-if (coursesAndDurationArray[4].monthDuration > 5){
-    console.log("Cool");
-}
-else {
-    console.log("BAD");
-}
-
-if (coursesAndDurationArray[5].monthDuration > 5){
-    console.log("Cool");
-}
-else {
-    console.log("BAD");
-}
+obj2.age = 20;
+console.log(obj2);
+console.log(obj1);
+console.log(obj3);
