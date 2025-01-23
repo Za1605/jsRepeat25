@@ -6,4 +6,7 @@
 for (let i = 0; i < 10; i++) {
     document.write(`<div>Hello</div>`);
 }
+for (let i = 1; i <= 11; i++) {
+    document.write(`<div> How are you ${i}</div>`);
 
+}
