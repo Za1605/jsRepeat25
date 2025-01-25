@@ -75,13 +75,13 @@ let products = [
 ];
 
 for (const product of products) {
-    for (const key in product) {
-        document.write(`<div>
-            <h3> `Title- ${title}  Price ${key.price}`</h3>
-            <img src="image" alt= ${key.image}>
+
+        document.write(`<div class="chop">
+            <h3>Title- ${product.title} <br> Price -${product.price}</h3>
+            <img src="${product.image}">
         </div>`);
     }
-}
+
 
 
 //є масив
