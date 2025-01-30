@@ -68,10 +68,48 @@ fooLi('Kiss you', 8);
    }
    fooNumArr(17,[undefined,'hello',true,NaN,false]);
 
-//- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+//- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+//Для кожного об'єкту окремий блок.
+function fooArr(...arr) {
+    for (const arrElement of arr) {
+        document.write(`<div>${arrElement}</div>`);
+    }
+}
+fooArr([12,13,12,16,88]);
+
 //- створити функцію яка повертає найменьше число з масиву
-//- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-//- створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+
+function fooMin(array) {
+    let min = array[0];
+    for (const arrayElement of array) {
+        if
+            ( arrayElement < min ){
+             min = arrayElement;
+            }
+        }
+            return min;
+
+
+    }
+console.log(fooMin([33,44,55,88,99,54]));
+
+//- створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів
+// масиву та повертає його. Приклад sum([1,2,10]) //->13
+function sumArray(arr) {
+    let firsNum = 0;
+    for (const firsNumElement of arr) {
+           firsNum += firsNumElement;
+    }
+    return firsNum;
+}
+
+console.log(sumArray([11,8,4,67]));
+
+//- створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
 //Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+function swap(array,index1,index2) {
+    
+}
+
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 //Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
