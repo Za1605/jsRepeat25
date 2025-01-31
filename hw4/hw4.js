@@ -107,9 +107,27 @@ console.log(sumArray([11,8,4,67]));
 
 //- створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
 //Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-function swap(array,index1,index2) {
-    
+function swap(array,index1,index2,index3) {
+    let firstInd = array[index1];
+    array[index1] = array[index2];
+    array[index2] = array[index3];
+    array[index3]= firstInd;
+    return array;
+
 }
+
+console.log(swap([11,22,33,44], 1,2,3));
 
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 //Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+function exchange(sumUAH,currencyValues,exchangeCurrency) {
+    for (const sumUAHElement of currencyValues) {
+        if (sumUAHElement.currency === exchangeCurrency){
+            return sumUAH/sumUAHElement.value;
+        }
+    }
+
+}
+const res = exchange(10000,[{currency:'EUR',value:42},{currency:'USD',value:40}],'USD');
+console.log(res);
