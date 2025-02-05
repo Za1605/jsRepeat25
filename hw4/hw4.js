@@ -89,7 +89,6 @@ function fooMin(array) {
         }
             return min;
 
-
     }
 console.log(fooMin([33,44,55,88,99,54]));
 
