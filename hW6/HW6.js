@@ -45,7 +45,9 @@ let arr1 = [10,8,-7,55,987,-1011,0,1050,0];
 //    let nums = [11,21,3];
 //sortNums(nums,'ascending') // [3,11,21]
 //sortNums(nums,'descending') // [21,11,3]
-//
+ let arr3 = [11,21,3];
+ let arr4 = arr3.sort((a,b) => b-a);
+ console.log(arr4);
 //==========================
 //- є масив
 //let coursesAndDurationArray = [
@@ -59,7 +61,30 @@ let arr1 = [10,8,-7,55,987,-1011,0,1050,0];
 //-- відсортувати його за спаданням за monthDuration
 //-- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 //-- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
-//=========================
+ let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+   {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+  {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4},
+];
+
+ let arr5 = coursesAndDurationArray.sort((a,b) =>
+a.monthDuration-b.monthDuration
+ );
+ console.log(arr5);
+
+ let arr6 = arr5.filter(a => a.monthDuration > 5);
+ console.log(arr6);
+
+ let arr8 = arr6.map(a => {
+  return {
+   id:a.id[0],
+   title:a.title,
+   monthDuration:a.monthDuration};
+ });
+ console.log(arr8);
 //    описати колоду карт (від 6 до туза без джокерів)
 //- знайти піковий туз
 //- всі шістки
