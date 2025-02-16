@@ -70,21 +70,15 @@ let arr1 = [10,8,-7,55,987,-1011,0,1050,0];
     {title: 'Frontend', monthDuration: 4},
 ];
 
- let arr5 = coursesAndDurationArray.sort((a,b) =>
-a.monthDuration-b.monthDuration
- );
- console.log(arr5);
+let arr5 = coursesAndDurationArray.sort((a,b) => a.monthDuration-b.monthDuration);
+console.log(arr5)
+let arr6 = arr5.filter(a => a.monthDuration > 5);
+console.log(arr6);
 
- let arr6 = arr5.filter(a => a.monthDuration > 5);
- console.log(arr6);
-
- let arr8 = arr6.map(a => {
-  return {
-   id:a.id[0],
-   title:a.title,
-   monthDuration:a.monthDuration};
- });
- console.log(arr8);
+ let arr8 = coursesAndDurationArray.map((coursesAndDurationArray,index) => ({
+  title: coursesAndDurationArray.title,monthDuration: coursesAndDurationArray.monthDuration,id:index+1,
+ }));
+ document.write(JSON.stringify(arr8));
 //    описати колоду карт (від 6 до туза без джокерів)
 //- знайти піковий туз
 //- всі шістки
@@ -111,3 +105,72 @@ a.monthDuration-b.monthDuration
 //    взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
 //--написати пошук всіх об'єктів, в який в modules є sass
 //--написати пошук всіх об'єктів, в який в modules є docker
+let coursesArray = [
+ {
+  title: 'JavaScript Complex',
+  monthDuration: 5,
+  hourDuration: 909,
+  modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+ },
+ {
+  title: 'Java Complex',
+  monthDuration: 6,
+  hourDuration: 909,
+  modules: ['html',
+   'css',
+   'js',
+   'mysql',
+   'mongodb',
+   'angular',
+   'aws',
+   'docker',
+   'git',
+   'java core',
+   'java advanced']
+ },
+ {
+  title: 'Python Complex',
+  monthDuration: 6,
+  hourDuration: 909,
+  modules: ['html',
+   'css',
+   'js',
+   'mysql',
+   'mongodb',
+   'angular',
+   'aws',
+   'docker',
+   'python core',
+   'python advanced']
+ },
+ {
+  title: 'QA Complex',
+  monthDuration: 4,
+  hourDuration: 909,
+  modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+ },
+ {
+  title: 'FullStack',
+  monthDuration: 7,
+  hourDuration: 909,
+  modules: ['html',
+   'css',
+   'js',
+   'mysql',
+   'mongodb',
+   'react',
+   'angular',
+   'aws',
+   'docker',
+   'git',
+   'node.js',
+   'python',
+   'java']
+ },
+ {
+  title: 'Frontend',
+  monthDuration: 4,
+  hourDuration: 909,
+  modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+ }
+];
