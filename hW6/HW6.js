@@ -172,5 +172,27 @@ let coursesArray = [
   monthDuration: 4,
   hourDuration: 909,
   modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
- }
+ },
 ];
+let reduce = coursesArray.reduce(
+    (accumulator,course )=> {
+ if (course.modules.includes('sass')){
+  accumulator[0].push(coursesArray);
+ }
+ else if(
+  course.modules.includes('docker')){
+  accumulator[1].push(coursesArray);}
+else {
+ accumulator[2].push(coursesArray);
+ }
+ return accumulator;
+},
+[[],[],[]]
+);
+
+let allCourse = reduce[0];
+console.log(allCourse);
+let allCourse1 = reduce[1];
+console.log(allCourse1);
+let allCourse2 = reduce[2];
+console.log(allCourse2);
