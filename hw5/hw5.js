@@ -89,7 +89,7 @@ const swap = (arr, index1,index2) => {
         arr[index1]= arr[index2];
         arr[index2] = firstInd;
     return arr;
-};
+};n
 
 console.log(swap([12,34,56,78],1,2));
 //- Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
